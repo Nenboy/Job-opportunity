@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+h3{
+    text-align: center;
+}
+#form-div{
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    box-shadow: 2px 3px 4px rgb(170, 240, 170);
+}
+input{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border: solid green 1px;
+    outline: none;
+    box-shadow: 1px 1px;
+}
+label{
+    font-weight: bold;
+}
+#date{
+    width: 13vw;
+    overflow-x: hidden;
+}
+#circle{
+    display: flex;
+    align-items: center;
+    gap: 3.7rem;
+}
+input[type="radio"]{
+    box-shadow: none;
+    align-items: left;
+}
+input[type="submit"]{
+    background: white;
+    text-transform: capitalize;
+    box-shadow: none;
+    margin-top: 3rem;
+    margin: 1rem;
+    width: 20vw;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    transition: 0.2s ease;
+}
+input[type="submit"]:hover{
+    background: lightgreen;
+    color: white;
+}
+@media screen and (max-width: 1180px) {
+input[type="submit"]{
+    width: 85%;
+    margin: 1rem;
+    }
+#date{
+    width: 27vw;
+    overflow-x: hidden;
+    }
+form{
+    width: 78%;
+    }
+}

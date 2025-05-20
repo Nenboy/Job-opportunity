@@ -1,0 +1,164 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+header{
+    position: fixed;
+    width: min(98.5vw);
+    top: -5%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem;
+    border-bottom: solid lightslategray 1px;
+    background-color: white;
+}
+.logo h3{
+    background: linear-gradient(to right,rgb(20, 20, 20),rgb(26, 226, 26));
+    background-clip: text;
+    color: transparent;
+}
+select{
+    border: none;
+    outline: none;
+    border-top-left-radius: 3px;
+    padding: 0.5rem;
+    background-color: white;
+    color: black;
+    box-shadow: 2px 2px lightgreen;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.searchBox {
+    position: absolute;
+    left: 50%;
+    transform:  translate(-65%,25%);
+    background: #2f3640;
+    border-radius: 40px;
+}
+
+.searchBox:hover > .searchInput {
+    width: 15vw;
+    padding: 0 6px;
+}
+
+.searchBox:hover > .searchButton {
+  background: white;
+  color : #2f3640;
+}
+
+.searchButton {
+    color: white;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.searchInput {
+    border:none;
+    background: none;
+    outline:none;
+    float:left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
+
+@media screen and (max-width: 620px) {
+.searchBox:hover > .searchInput {
+    width: 17vw;
+    padding: 0 6px;
+    }
+}
+button {
+    padding: 0.7rem;
+    color: black;
+    background-color: white;
+    border: solid green 1px;
+    border-radius: 2px;
+}
+/* HEADER BEGINS HERE */
+
+/* SECTION BEGINS HERE */
+section{
+    columns: 4 200px;
+    column-gap: 2rem;
+    margin: 5.2rem;
+}
+.grid{
+    transition: 0.5s ease;
+    display: block;
+    border: solid green 1px;
+    border-radius: 1.5rem  0 1.5rem 0;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.grid:hover{
+    transform: translateY(-1rem);
+}
+
+.grid h5{
+    margin-top: 0;
+    color: white;
+    background: linear-gradient(lightgreen, gray);
+    padding: 0.5rem;
+}
+/* SECTION ENDS HERE
+/* BUTTON SECTION BEGINS*/
+.btn{
+    border-bottom: solid lightslategray 1px;
+}
+.btn button{
+    padding: 1.5rem;
+    width: 89%;
+    margin: 4rem;
+    cursor: pointer;
+    letter-spacing: 2px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    transition: 1s ease;
+}
+.btn button:hover{
+    background: lightgreen;
+    color: white;
+}
+@media screen and (max-width: 998px) {
+.btn button {
+    width: 82%;
+    margin: 3rem;
+    }
+}
+/* BUTTON SECTION ENDS*/
+
+/* FOOTER BEGINS*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+/* FOOTER ENDS*/
